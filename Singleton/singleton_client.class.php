@@ -1,9 +1,8 @@
 <?php
 require_once 'SingletonSample.class.php';
 
-//$a = new SingletonSample(); 
 /**
- * ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ2‚Âæ“¾‚·‚é
+ * ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’2ã¤å–å¾—ã™ã‚‹
  */
 $instance1 = SingletonSample::getInstance();
 sleep(1);
@@ -12,19 +11,19 @@ $instance2 = SingletonSample::getInstance();
 echo '<hr>';
 
 /**
- * 2‚Â‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ª“¯ˆêID‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+ * 2ã¤ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒåŒä¸€IDã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
  */
 echo 'instance ID : ' . $instance1->getID() . '<br>';
 echo '$instance1->getID() === $instance2->getID() : ' . ($instance1->getID() === $instance2->getID() ? 'true' : 'false');
 echo '<hr>';
 
 /**
- * 2‚Â‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ª“¯ˆê‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+ * 2ã¤ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒåŒä¸€ã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
  */
 echo '$instance1 === $instance2 : ' . ($instance1 === $instance2 ? 'true' : 'false');
 echo '<hr>';
 
 /**
- * •¡»‚Å‚«‚È‚¢‚±‚Æ‚ğŠm”F‚·‚é
+ * è¤‡è£½ã§ããªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹
  */
 $instance1_clone = clone $instance1;
