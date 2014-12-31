@@ -1,0 +1,4 @@
+商品ID    商品名              価格
+1         Tsyatu        1500
+2         nuigurumi     2000
+3         cokie         800
